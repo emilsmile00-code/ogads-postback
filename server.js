@@ -6,9 +6,8 @@ app.use(express.json());
 
 // Add your Supabase credentials here
 const supabase = createClient(
-  'https://dljpzzlzxtbxfonwpinn.supabase.co',
-  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRsanB6emx6eHRieGZvbndwaW5uIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjI0NTAzMTIsImV4cCI6MjA3ODAyNjMxMn0.I6o3QCGk38emhXU-PX3Ymv2YoreZj_IG_-OP7HZrfzY'
-);
+  'https://qpwpvehfriedhafjmzij.supabase.co',
+  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFwd3B2ZWhmcmllZGhhZmptemlqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjA2NTI2ODMsImV4cCI6MjA3NjIyODY4M30.R5ITHyu5OGUE_Jw0zMmLzpL7SjPEvJzwSQamwS2iCow');
 
 app.get('/api/ogads-postback', async (req, res) => {
     console.log('📨 OGAds Postback Received:', req.query);
